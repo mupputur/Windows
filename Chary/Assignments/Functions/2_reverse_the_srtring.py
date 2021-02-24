@@ -2,8 +2,8 @@
 
 def reverse_string(given_str):
     new_str=""
-    for i in range(-1,-(len(x)+1),-1):
-        new_str=new_str+x[i]
+    for i in range(-1,-(len(given_str)+1),-1):
+        new_str=new_str+given_str[i]
     return new_str
 
 given_str=input("Enter the input string:")
