@@ -1,7 +1,7 @@
 #wap to reverse a given list
-def reverse_list(x):
-    for i in range(len(x)//2):
-        x[i],x[len(x)-i-1]= x[len(x)-i-1], x[i]
-    return x    
-x=eval(input("enter the elements in list format:"))
-print(reverse_list(x))
+def reverse_list(list):
+    for num in range(len(list)//2):
+        list[num],list[len(list)-num-1]= list[len(list)-num-1], list[num]
+    return list    
+list=eval(input("enter the elements in list format:"))
+print(reverse_list(list))

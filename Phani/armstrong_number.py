@@ -1,13 +1,13 @@
 #Write a program find a given number is Armstrong or not
-def armstrong_number(x):
+def armstrong_number(num):
+    len_num=len(str(num))
     sum=0
-    y=x
+    y=num
     while y!=0:
-        num=y%10
-        sum+=num**3
+        rem=y%10
+        sum+=rem**len_num
         y=int(y/10)
-    print(sum)
-    if x==sum:
+    if num==sum:
         return("its a armstrong number")
     else:
         return("its not a armstrong number")

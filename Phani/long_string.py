@@ -1,31 +1,12 @@
 #Write a program print longest length string from given input list of strings
 
-def long_string(x):
+def long_string(strings):
     max=0
-    for i in x:
-        if len(i) > max:
-            max=len(i)
-            y=i
-    return y
-x=["phani","phaneendra","jahanavi","chary","suresh","praksh","brahmacharyulu","a"]
-print(long_string(x))
+    for string in strings:
+        if len(string) > max:
+            max=len(string)
+            long_string=string
+    return long_string
+strings=["phani","phaneendra","jahanavi","chary","suresh","praksh","brahmacharyulu","a"]
+print(long_string(strings))
 
-
-
-
-"""
-    y=len(x[0])
-    for i in range(1,len(x)):
-        if len(x[i])>y :
-            y=len(x[i])
-"""
-
-"""
-def max_in_list(x):
-    y=len(x[0])
-    for i in range(1,len(x)):
-        if y<len(x[i]):
-            y=len(x[i])
-            return x[i]
-
-"""
