@@ -10,11 +10,8 @@ def is_perfect(num):
     else:
         return -1
 
-
-
 num=int(input("Enter the number:"))
 result= is_perfect(num)
-
 if result==1:
     print("The given number is a 'Perfect' number")
 elif result==-1:

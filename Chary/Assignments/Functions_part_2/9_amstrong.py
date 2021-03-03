@@ -5,8 +5,8 @@ def is_amstrong(num):
     mul_val=0
     temp_no=num
     while(num!=0):
-        unit=num%10
-        mul_val=mul_val+unit**len_of_num
+        digit=num%10
+        mul_val=mul_val+(digit**len_of_num)
         num=num//10
     if mul_val==temp_no:
         return True
@@ -15,7 +15,6 @@ def is_amstrong(num):
                        
 num=int(input("Enter the number to find amstrong or not:"))
 result = is_amstrong(num)
-
 if result:
     print("Amstrong Number")
 elif not result:

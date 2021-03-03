@@ -7,5 +7,4 @@ def foctorial(num):
     return result
 
 num=int(input("Enter the nuber to find factorial:"))
-
 print(foctorial(num))
