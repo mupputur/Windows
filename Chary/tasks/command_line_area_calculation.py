@@ -21,7 +21,7 @@ if argv[0] in words:
     ip=input()
 else:
     ip=argv[0]
-if len(ip)==0 or (ip not in "CRT"):
+if len(ip)==0 or (ip not in "CRTcrt"):
     print("please provide the valid input, Thanking you\n")
     sys.exit(0)
 if ip=="C"or ip=="c" :
