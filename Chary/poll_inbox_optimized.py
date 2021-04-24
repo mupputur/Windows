@@ -9,7 +9,7 @@ class PollInbox(ReadMail):
         outlook_obj = ReadMail()
         inbox_count = inbox_folder.Items.Count
         if inbox_count:
-            outlook_obj.inbox_mail(inbox_folder)
+            print(outlook_obj.inbox_mail(inbox_folder))
             count =0
             while(True):
                 count = count + 1
@@ -25,8 +25,7 @@ class PollInbox(ReadMail):
         else:
             print("No mails in Inbox")
 
-
-poll_obj = PollInbox()
-
-inbox_folder = outlook.GetDefaultFolder(6)
-poll_obj.poll_mail(inbox_folder)
+if __name__ == "__main__":
+    poll_obj = PollInbox()
+    inbox_folder = outlook.GetDefaultFolder(6)
+    poll_obj.poll_mail(inbox_folder)
